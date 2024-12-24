@@ -32,9 +32,13 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
         <head>
+            <link rel="icon" href="/Images/DukesPantheraCrown.png" />
             <link rel="preconnect" href="https://fonts.googleapis.com" />
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
             <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+            
+            <meta name="theme-color" content="#2A52BE" />
         </head>
         <body className="">
             {children}

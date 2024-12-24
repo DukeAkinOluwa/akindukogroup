@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Cinzel:wght@400..900&display=swap");
+* {
+  font-family: "Montserrat";
+  -webkit-tap-highlight-color: transparent;
+}
+*:focus-visible {
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+body, html {
+  width: 100dvw;
+  margin: 0px;
+  background-color: #f3f4fa;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Cinzel";
+  padding: 0px;
+  margin: 0px;
+}
+
+p {
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+  line-height: 35px;
+  padding: 0px;
+  margin: 0px;
+  color: #494C54;
+}
+
+a {
+  text-decoration: none;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+label span {
+  pointer-events: none;
+  padding: 0px 10px;
+  border-radius: 8px 8px 0px 0px;
+  width: fit-content;
+}
+
+input {
+  width: calc(100% - 20px - 2px);
+  height: 40px;
+  border: solid 1px #BDBDBD;
+  border-radius: 8px;
+  padding: 2px 10px;
+  font-size: 1rem;
+}
+
+input[type=submit i] {
+  width: 100%;
+  background-color: #2A52BE;
+  color: #FFFFFF;
+  border-color: #2A52BE;
+}
+
+.button {
+  width: max-content;
+}
+.button:hover {
+  cursor: pointer;
+}
+
+.button1 p,
+.button1 a {
+  padding: 15px;
+  background-color: #2A52BE;
+  color: #FFFFFF;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.button2 p,
+.button2 a {
+  padding: 15px;
+  background-color: transparent;
+  color: #2A52BE;
+  border-radius: 8px;
+}
+
+.highlight {
+  color: #5979d3 !important;
+}
+
+.limitedText {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  line-height: 1.2em;
+  max-height: 4.8em;
+}
+
+.navbar {
+  position: absolute;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 80px);
+  color: #FFFFFF;
+  height: 80px;
+  background: transparent;
+  backdrop-filter: blur(1px);
+}
+.navbar .left img {
+  height: 100%;
+}
+.navbar .right nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.navbar .right nav a {
+  color: #FFFFFF;
+}
+
+.footer {
+  width: 100%;
+  height: fit-content;
+  margin: 20px 0px 0px;
+  min-height: 80px;
+  background-color: #f3f4fa;
+  border-top: solid 1px #2A52BE;
+}
+
+.landing-page {
+  width: 100dvw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 90px;
+}
+.landing-page h1 {
+  color: #2A52BE;
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+.landing-page .sectionButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  border: solid 1px #2A52BE;
+  border-radius: 50px;
+}
+.landing-page .sectionButton p {
+  padding: 1px 15px;
+  color: #2A52BE;
+}
+.landing-page .landing-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100dvh - 80px);
+  max-height: 716px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  color: #FFFFFF;
+  transition: background-image 1s ease-in-out;
+}
+.landing-page .landing-banner .navbar,
+.landing-page .landing-banner .centreText {
+  z-index: 1;
+}
+.landing-page .landing-banner .centreText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+.landing-page .landing-banner .centreText .h {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing-page .landing-banner .centreText h1 {
+  color: #FEFAFA;
+  font-size: 4rem;
+}
+.landing-page .landing-banner .heading,
+.landing-page .landing-banner .paragraph {
+  transition: opacity 2s ease-in-out;
+}
+.landing-page .landing-banner .paragraph {
+  text-align: center;
+}
+.landing-page .landing-banner .paragraph p {
+  color: #FFFFFF;
+}
+.landing-page .landing-banner .filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100dvh - 80px);
+  max-height: 716px;
+  width: 100%;
+  background: linear-gradient(rgba(2, 10, 42, 0.9) 0%, rgba(2, 10, 42, 0.15) 100%);
+  z-index: 0;
+}
+.landing-page .whoAreWe,
+.landing-page .corePillars,
+.landing-page .innovationZone,
+.landing-page .contact {
+  margin-top: 50px;
+}
+.landing-page .whoAreWe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 30px 0px;
+}
+.landing-page .whoAreWe h1, .landing-page .whoAreWe p {
+  width: 70%;
+  text-align: center;
+}
+.landing-page .corePillars {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: calc(100% - 200px);
+}
+.landing-page .corePillars .content {
+  display: grid;
+  grid-template-columns: auto 30vw;
+  gap: 70px;
+}
+.landing-page .corePillars .content h3 {
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+.landing-page .corePillars .content .left {
+  display: grid;
+  gap: 60px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+.landing-page .corePillars .content .left .pillar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.landing-page .corePillars .content .left .pillar .highlightLine {
+  width: 8px;
+  height: 100%;
+  min-width: 6px;
+  background-color: #2A52BE;
+  border-radius: 10px;
+}
+.landing-page .corePillars .content .left .pillar .text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px 0px;
+  width: 100%;
+  overflow: hidden;
+}
+.landing-page .corePillars .content .right {
+  background-color: #DFE5F5;
+}
+.landing-page .corePillars .content .right img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+.landing-page .innovationZone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: 40px;
+  width: calc(100% - 200px);
+  text-align: center;
+}
+.landing-page .innovationZone .content {
+  display: grid;
+  grid-template-areas: "topLeft topRight" "bottom bottom";
+  gap: 40px;
+}
+.landing-page .innovationZone .content .zone1 {
+  grid-area: topLeft;
+}
+.landing-page .innovationZone .content .zone2 {
+  grid-area: topRight;
+}
+.landing-page .innovationZone .content .zone3 {
+  grid-area: bottom;
+}
+.landing-page .innovationZone .content .zone1,
+.landing-page .innovationZone .content .zone2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+.landing-page .innovationZone .content .zone3 {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 320px;
+}
+.landing-page .innovationZone .content .zone {
+  gap: 20px;
+  background-color: #DFE5F5;
+  border-radius: 20px;
+  padding: 40px;
+}
+.landing-page .innovationZone .content .zone .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.landing-page .innovationZone .content .zone .image {
+  height: 190px;
+  width: 320px;
+  background-color: #FFFFFF;
+}
+.landing-page .innovationZone .content .zone .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.landing-page .contact {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  width: calc(100% - 200px);
+}
+.landing-page .contact .crown {
+  height: 435px;
+  width: auto;
+  left: -335px;
+  align-self: normal;
+}
+.landing-page .contact .content {
+  display: grid;
+  grid-template-columns: 40% auto;
+  gap: 40px;
+}
+.landing-page .contact .content .left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.landing-page .contact .content .left h1 {
+  font-size: 3rem;
+}
+.landing-page .contact .content .left p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.landing-page .contact .content .left .icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.landing-page .contact .content .left .icons .circle {
+  height: 50px;
+  width: 50px;
+  background-color: #DFE5F5;
+  border-radius: 50%;
+}
+.landing-page .contact .content .form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+.landing-page .contact .content .form form {
+  position: relative;
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.landing-page .crown {
+  position: absolute;
+  align-self: center;
+  top: -50px;
+  height: 300px;
+  width: auto;
+  opacity: 0.04;
+}
+
+/*# sourceMappingURL=globals.css.map */
