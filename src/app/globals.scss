@@ -142,7 +142,8 @@ input[type="submit" i]{
     @include fa();
     justify-content: space-between;
     width: calc(100% - 80px);
-    color: $white;
+    padding: 0px 40px;
+    // color: $white;
     height: 80px;
     background: transparent;
     backdrop-filter: blur(1px);
@@ -160,6 +161,10 @@ input[type="submit" i]{
         }
         }
     }
+}
+header{
+    width: 100%;
+    height: max-content;
 }
 .footer{
     width: 100%;
@@ -415,6 +420,73 @@ input[type="submit" i]{
     }
 }
 
+// Pages - About
+.aboutPage{
+    width: 100dvw;
+    @include fda;
+    h1{
+        color: $primaryColor;
+        font-size: 3.2rem;
+        font-weight: 600;
+    }
+    .navbar{
+        background-color: $primaryColor;
+        color: $secondaryColor;
+    }
+    .content{
+        @include fda;
+        margin: 180px 0px 0px;
+    }
+    .person{
+        @include fj;
+        gap: 30px;
+        height: fit-content;
+        overflow: hidden;
+        margin: 30px 0px 0px;
+        & > .left,
+        & > .right{
+            @include fdja;
+            height: 100%;
+            margin: 20px 0px 0px;
+        }
+        & > .left{
+            right: 80px;
+            width: 310px;
+            h2{
+                font-size: 1.1rem;
+                margin: 20px auto auto;
+                font-weight: 500;
+            }
+            p{
+                font-size: 1rem;
+            }
+            img{
+                height: 370px;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(42, 82, 190, .2);
+            }
+        }
+        & > .right{
+            left: 80px;
+            width: calc(100% - 730px);
+            gap: 20px;
+            p{
+                font-size: 1rem
+            }
+        }
+    }
+    .crown{
+        position: absolute;
+        align-self: center;
+        top: 80px;
+        height: 300px;
+        width: auto;
+        opacity: .04;
+    }
+}
+
 
 @media only screen and (max-width: 760px){}
 
@@ -426,7 +498,24 @@ input[type="submit" i]{
 @media only screen and (min-width: 576px) and (max-width: 767.98px){}
 
 // Medium Devices (Tablets-Landscape)
-@media only screen and (min-width: 768px) and (max-width: 991.98px){}
+@media only screen and (min-width: 768px) and (max-width: 1199.98px){
+    .aboutPage{
+        .person{
+            & > .left{
+                width: 350px;
+                h2{
+                    font-size: 1.2rem;
+                }
+                img{
+                    height: 400px;
+                }
+            }
+            & > .right{
+                width: calc(100% - 480px);
+            }
+        }
+    }
+}
 
 // Small Devices (Phone-Landscape)
 @media only screen and (max-height: 600px) and (min-width: 600px){}
