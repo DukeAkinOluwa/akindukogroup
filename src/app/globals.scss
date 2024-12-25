@@ -175,16 +175,93 @@ header{
     border-top: solid 1px $primaryColor;
 }
 
-// Pages - Landing Page
-.landing-page{
+// Pages - Group
+.landingPage,
+.aboutPage,
+.contactPage{
     width: 100dvw;
     @include fda;
-    gap: 90px;
     h1{
         color: $primaryColor;
         font-size: 3.2rem;
         font-weight: 600;
     }
+    .crown{
+        position: absolute;
+        align-self: center;
+        height: 300px;
+        width: auto;
+        opacity: .04;
+    }
+}
+
+.landingPage,
+.contactPage{
+    .contact{
+        @include fd;
+        gap: 40px;
+        position: relative;
+        width: calc(100% - 200px);
+        .crown{
+            height: 435px;
+            width: auto;
+            left: calc(-100px - 235px);
+            align-self: normal
+        }
+        .content{
+            display: grid;
+            grid-template-columns: 40% auto;
+            gap: 40px;
+            .left{
+                @include fd;
+                gap: 40px;
+                h1{
+                    font-size: 3rem;
+                }
+                p{
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                }
+                .icons{
+                    @include fa;
+                    gap: 20px;
+                    .circle{
+                        height: 50px;
+                        width: 50px;
+                        background-color: #DFE5F5;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            .form{
+                @include fa;
+                justify-content: flex-end;
+                width: 100%;
+                form{
+                    position: relative;
+                    height: 100%;
+                    width: 80%;
+                    @include fd;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}
+
+.aboutPage,
+.contactPage{
+    .navbar{
+        background-color: $primaryColor;
+        color: $secondaryColor;
+    }
+}
+
+
+// Pages - Individual
+// Pages - Landing Page
+.landingPage{
+    gap: 90px;
     .sectionButton{
         @include fja;
         width: fit-content;
@@ -196,7 +273,7 @@ header{
             color: $primaryColor
         }
     }
-    .landing-banner{
+    .landingBanner{
         @include fja;
         height: calc(100dvh - 80px);
         max-height: 716px;
@@ -360,79 +437,13 @@ header{
             }
         }
     }
-    .contact{
-        @include fd;
-        gap: 40px;
-        position: relative;
-        width: calc(100% - 200px);
-        .crown{
-            height: 435px;
-            width: auto;
-            left: calc(-100px - 235px);
-            align-self: normal
-        }
-        .content{
-            display: grid;
-            grid-template-columns: 40% auto;
-            gap: 40px;
-            .left{
-                @include fd;
-                gap: 40px;
-                h1{
-                    font-size: 3rem;
-                }
-                p{
-                    font-size: 1.2rem;
-                    font-weight: 500;
-                }
-                .icons{
-                    @include fa;
-                    gap: 20px;
-                    .circle{
-                        height: 50px;
-                        width: 50px;
-                        background-color: #DFE5F5;
-                        border-radius: 50%;
-                    }
-                }
-            }
-            .form{
-                @include fa;
-                justify-content: flex-end;
-                width: 100%;
-                form{
-                    position: relative;
-                    height: 100%;
-                    width: 80%;
-                    @include fd;
-                    justify-content: space-between;
-                }
-            }
-        }
-    }
     .crown{
-        position: absolute;
-        align-self: center;
         top: -50px;
-        height: 300px;
-        width: auto;
-        opacity: .04;
     }
 }
 
 // Pages - About
 .aboutPage{
-    width: 100dvw;
-    @include fda;
-    h1{
-        color: $primaryColor;
-        font-size: 3.2rem;
-        font-weight: 600;
-    }
-    .navbar{
-        background-color: $primaryColor;
-        color: $secondaryColor;
-    }
     .content{
         @include fda;
         margin: 180px 0px 0px;
@@ -478,12 +489,15 @@ header{
         }
     }
     .crown{
-        position: absolute;
-        align-self: center;
         top: 80px;
-        height: 300px;
-        width: auto;
-        opacity: .04;
+    }
+}
+
+// Pages - Contact
+.contactPage{
+    margin: 160px 0px 0px;
+    .sectionButton{
+        display: none;
     }
 }
 

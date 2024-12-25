@@ -22,8 +22,8 @@ export default function NavBar(){
             <div className="right">
                 <nav>
                     <Link href={`/`} >Home</Link>
-                    <Link href={`/About`} /*onClick={() => handleScrollClick('About')}*/ >About Us</Link>
-                    <Link href={`/#Contact`} >Contact</Link>
+                    <Link href={`/About`} >About Us</Link>
+                    <Link href={`/Contact`} >Contact</Link>
                     {/* <a href={`/`} >Home</a>
                     <a href={`/About`} >About Us</a>
                     <a href={`/Contact`} >Contact</a> */}

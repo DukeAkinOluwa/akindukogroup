@@ -4,6 +4,7 @@ import Image from "next/image";
 import Footer from "@/components/Footer";
 import NavBar from "@/components/Navbar";
 import { useEffect, useState } from "react";
+import Contact from "@/components/Contact";
 
 export default function Home() {
 
@@ -25,8 +26,8 @@ export default function Home() {
     return (
         <div className="page">
             <main className="main">
-                <div className="landing-page">
-                    <div className="landing-banner" style={style}>
+                <div className="landingPage">
+                    <div className="landingBanner" style={style}>
                         <NavBar />
                         <div className="filter"></div>
                         <div className="centreText">
@@ -134,38 +135,7 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="contact" id="Contact">
-                        <div className="sectionButton"><p>Contact</p></div>
-                        <Image src="/Images/DukesPantheraCrown.png" alt="Akinduko Group Crown" className="crown" width={1000} height={500} />
-                        <div className="content">
-                            <div className="left">
-                                <h1>Join Us In Shaping the Future</h1>
-                                <p>Akinduko Group seeks talented individuals passionate about fostering innovation and creating positive change to join our dynamic team.</p>
-                                <div className="icons">
-                                    <div className="circle"></div>
-                                    <div className="circle"></div>
-                                    <div className="circle"></div>
-                                </div>
-                            </div>
-                            <div className="form">
-                                <form action="#" method="post">
-                                    <label htmlFor="fullName">
-                                        <span>Full Name</span>
-                                        <input type="text" name="fullName" id="fullName" />
-                                    </label>
-                                    <label htmlFor="email">
-                                        <span>E-mail Address</span>
-                                        <input type="email" name="email" id="email" />
-                                    </label>
-                                    <label htmlFor="message">
-                                        <span>Message</span>
-                                        <input type="text" name="message" id="message" />
-                                    </label>
-                                    <input type="submit" className="button1" value="Send" />
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+                    <Contact />
                 </div>
             </main>
         <Footer />
