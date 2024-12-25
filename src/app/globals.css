@@ -117,13 +117,37 @@ input[type=submit i] {
 .navbar .left img {
   height: 100%;
 }
-.navbar .right nav {
+.navbar .right .longNav {
   display: flex;
   align-items: center;
   gap: 30px;
 }
-.navbar .right nav a {
+.navbar .right .longNav a {
   color: #FFFFFF;
+}
+.navbar .right .sideNav {
+  display: none;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.navbar .hamburgerMenuIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  height: 30px;
+  width: 40px;
+  justify-content: space-between;
+  display: none;
+}
+.navbar .hamburgerMenuIcon .lines {
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #FEFAFA;
 }
 
 header {
@@ -498,6 +522,90 @@ header {
   display: none;
 }
 
+@media only screen and (max-width: 575.98px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    width: 100dvw;
+    padding: 0px;
+  }
+  .navbar .left {
+    height: 80px;
+    min-height: 80px;
+  }
+  .navbar .left img {
+    display: none;
+  }
+  .navbar .right {
+    display: flex;
+    justify-content: center;
+  }
+  .navbar .right .longNav {
+    display: none;
+  }
+  .navbar .right .sideNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
+    width: 100dvw;
+    background-color: #2A52BE;
+  }
+  .navbar .right .sideNav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    color: #FEFAFA;
+  }
+  .navbar .hamburgerMenuIcon {
+    display: flex;
+  }
+  .aboutPage .navbar {
+    background-color: #2A52BE;
+  }
+  .aboutPage .content {
+    width: calc(100dvw - 40px);
+    margin: 130px 0px 0px;
+  }
+  .aboutPage .content .title h1 {
+    font-size: 2rem;
+  }
+  .aboutPage .person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 0px 0px;
+  }
+  .aboutPage .person .left,
+  .aboutPage .person .right {
+    width: 100%;
+  }
+  .aboutPage .person .left img {
+    width: calc(100% - 30px);
+    height: 250px;
+    border-radius: 6px 6px 3px 3px;
+  }
+  .aboutPage .person .left h2 {
+    font-weight: 600;
+    font-size: 1.35rem;
+    font-family: "montserrat";
+  }
+  .aboutPage .person .left p {
+    font-size: 1.2rem;
+  }
+  .aboutPage .person .right {
+    gap: 10px;
+  }
+  .aboutPage .person .right p {
+    text-align: justify;
+  }
+  .aboutPage .crown {
+    max-width: 300px;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 1199.98px) {
   .aboutPage .person > .left {
     width: 350px;

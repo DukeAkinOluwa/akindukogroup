@@ -153,12 +153,34 @@ input[type="submit" i]{
         }
     }
     .right{
-        nav{
-        @include fa();
-        gap: 30px;
-        a{
-            color: $white;
+        .longNav{
+            @include fa();
+            gap: 30px;
+            a{
+                color: $white;
+            }
         }
+        .sideNav{
+            display: none;
+            position: relative;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+    .hamburgerMenuIcon{
+        @include fda;
+        gap: 10px;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        height: 30px;
+        width: 40px;
+        justify-content: space-between;
+        display: none;
+        .lines{
+            height: 4px;
+            width: 100%;
+            border-radius: 10px;
+            background-color: $secondaryColor;
         }
     }
 }
@@ -506,7 +528,92 @@ header{
 
 // Responsiveness
 // Extra Small Devices (Phones)
-@media only screen and (max-width: 575.98px){}
+@media only screen and (max-width: 575.98px){
+    // Components
+    .navbar{
+        @include fd;
+        width: 100dvw;
+        padding: 0px;
+        .left{
+            height: 80px;
+            min-height: 80px;
+            img{
+                display: none;
+            }
+        }
+        .right{
+            @include fj;
+            .longNav{
+                display: none;
+            }
+            .sideNav{
+                @include fda;
+                gap: 10px;
+                padding: 10px 0px;
+                width: 100dvw;
+                background-color: $primaryColor;
+                a{
+                    @include fja;
+                    height: 40px;
+                    color: $secondaryColor;
+                }
+            }
+        }
+        .hamburgerMenuIcon{
+            display: flex;
+        }
+    }
+    
+
+    // Pages - About Page
+    .aboutPage{
+        .navbar{
+            background-color: $primaryColor;
+        }
+        .content{
+            width: calc(100dvw - 40px);
+            margin: 130px 0px 0px;  
+            .title{
+                h1{
+                    font-size: 2rem;
+                }
+            }
+        }
+        .person{
+            @include fda;
+            gap: 15px;
+            margin: 15px 0px 0px;
+            .left,
+            .right{
+                width: 100%;
+            }
+            .left{
+                img{
+                    width: calc(100% - 30px);
+                    height: 250px;
+                    border-radius: 6px 6px 3px 3px;
+                }
+                h2{
+                    font-weight: 600;
+                    font-size: 1.35rem;
+                    font-family: 'montserrat';
+                }
+                p{
+                    font-size: 1.2rem;
+                }
+            }
+            .right{
+                gap: 10px;
+                p{
+                    text-align: justify;
+                }
+            }
+        }
+        .crown{
+            max-width: calc(300px);
+        }
+    }
+}
 
 // Small Devices (Tablets-Portrait)
 @media only screen and (min-width: 576px) and (max-width: 767.98px){}
