@@ -567,6 +567,84 @@ header{
     }
     
 
+    // Pages - Group
+    .landingPage,
+    .aboutPage,
+    .contactPage{
+        h1{
+            font-size: 2rem;
+        }
+    }
+
+    .landingPage,
+    .contactPage{
+        .contact{
+            width: calc(100dvw - 40px);
+            .content{
+                grid-template-columns: 1fr;
+                .form{
+                    form{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    // Pages - Landing Page
+    .landingPage{
+        max-width: 100dvw;
+        overflow: hidden;
+        .landingBanner{
+            .centreText{
+                width: calc(100% - 40px);
+                .heading{
+                    .h{
+                        @include fd;
+                        gap: 0px;
+                    }
+                    h1{
+                        font-size: 3.0rem;
+                    }
+                }
+                .paragraph{
+                    display: none;
+                }
+            }
+        }
+        .whoAreWe{
+            h1, p{
+                width: calc(100% - 40px);
+            }
+        }
+        .innovationZone{
+            width: calc(100% - 40px);
+            .content{
+                width: 100%;
+                grid-template-areas: 
+                'topLeft'
+                'topRight'
+                'bottom';
+                .zone{
+                    padding: 10px;
+                    width: calc(100% - 20px);
+                    overflow: hidden;
+                    .image{
+                        width: 100%;
+                        border-radius: 10px;
+                        overflow: hidden;
+                    }
+                    p{
+                        font-size: 1.1rem;
+                    }
+                }
+                .zone3{
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+    }
+
     // Pages - About Page
     .aboutPage{
         .navbar{

@@ -564,6 +564,67 @@ header {
   .navbar .hamburgerMenuIcon {
     display: flex;
   }
+  .landingPage h1,
+  .aboutPage h1,
+  .contactPage h1 {
+    font-size: 2rem;
+  }
+  .landingPage .contact,
+  .contactPage .contact {
+    width: calc(100dvw - 40px);
+  }
+  .landingPage .contact .content,
+  .contactPage .contact .content {
+    grid-template-columns: 1fr;
+  }
+  .landingPage .contact .content .form form,
+  .contactPage .contact .content .form form {
+    width: 100%;
+  }
+  .landingPage {
+    max-width: 100dvw;
+    overflow: hidden;
+  }
+  .landingPage .landingBanner .centreText {
+    width: calc(100% - 40px);
+  }
+  .landingPage .landingBanner .centreText .heading .h {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .landingPage .landingBanner .centreText .heading h1 {
+    font-size: 3rem;
+  }
+  .landingPage .landingBanner .centreText .paragraph {
+    display: none;
+  }
+  .landingPage .whoAreWe h1, .landingPage .whoAreWe p {
+    width: calc(100% - 40px);
+  }
+  .landingPage .innovationZone {
+    width: calc(100% - 40px);
+  }
+  .landingPage .innovationZone .content {
+    width: 100%;
+    grid-template-areas: "topLeft" "topRight" "bottom";
+  }
+  .landingPage .innovationZone .content .zone {
+    padding: 10px;
+    width: calc(100% - 20px);
+    overflow: hidden;
+  }
+  .landingPage .innovationZone .content .zone .image {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .landingPage .innovationZone .content .zone p {
+    font-size: 1.1rem;
+  }
+  .landingPage .innovationZone .content .zone3 {
+    grid-template-columns: 1fr;
+  }
   .aboutPage .navbar {
     background-color: #2A52BE;
   }
