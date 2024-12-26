@@ -565,7 +565,6 @@ header{
             display: flex;
         }
     }
-    
 
     // Pages - Group
     .landingPage,
@@ -584,7 +583,11 @@ header{
                 grid-template-columns: 1fr;
                 .form{
                     form{
+                        gap: 10px;
                         width: 100%;
+                        .button1{
+                            margin: 15px 0px 0px;
+                        }
                     }
                 }
             }

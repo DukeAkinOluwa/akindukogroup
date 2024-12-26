@@ -579,7 +579,12 @@ header {
   }
   .landingPage .contact .content .form form,
   .contactPage .contact .content .form form {
+    gap: 10px;
     width: 100%;
+  }
+  .landingPage .contact .content .form form .button1,
+  .contactPage .contact .content .form form .button1 {
+    margin: 15px 0px 0px;
   }
   .landingPage {
     max-width: 100dvw;
