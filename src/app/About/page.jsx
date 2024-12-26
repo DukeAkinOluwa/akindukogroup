@@ -16,7 +16,7 @@ export default function About() {
                     <div className="left">
                         <Image src="/Images/AkindukoAkinOluwa.jpg" alt="Leadership" width={1000} height={1000} />
                         <h2>Akinduko AkinOluwa IreOluwa</h2>
-                        <p>Founder &amp; CEO</p>
+                        <p>Chairman &amp; CEO</p>
                     </div>
                     <div className="right">
                         <p><strong>Akinduko AkinOluwa IreOluwa</strong>, proprietor of Akinduko Group, envisions a future driven by innovation and excellence. With a foundation in engineering and entrepreneurial expertise, he pioneers solutions that enhance productivity, redefine fashion, and revolutionize engineering through cutting-edge initiatives.</p>
