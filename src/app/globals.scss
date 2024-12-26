@@ -616,22 +616,59 @@ header{
             }
         }
         .whoAreWe{
+            margin: 0px;
+            padding: 10px 0px 30px;
             h1, p{
                 width: calc(100% - 40px);
+            }
+        }
+        .corePillars{
+            width: calc(100% - 40px);
+            .content{
+                grid-template-columns: 1fr;
+                .left{
+                    gap: 20px;
+                    .pillar{
+                        gap: 15px;
+                        .highlightLine{
+                            border-radius: 1px;
+                            width: 2px;
+                        }
+                        .limitedText{
+                            -webkit-line-clamp: 5;
+                            line-clamp: 5;
+                            max-height: 6.2em;
+                            line-height: normal;
+                        }
+                        p{
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+                .right{
+                    display: none;
+                }
             }
         }
         .innovationZone{
             width: calc(100% - 40px);
             .content{
                 width: 100%;
+                gap: 15px;
                 grid-template-areas: 
                 'topLeft'
                 'topRight'
                 'bottom';
                 .zone{
-                    padding: 10px;
+                    padding: 25px 10px 10px;
                     width: calc(100% - 20px);
                     overflow: hidden;
+                    .text{
+                        gap: 0px;
+                        p{
+                            line-height: 1.5rem;
+                        }
+                    }
                     .image{
                         width: 100%;
                         border-radius: 10px;

@@ -604,20 +604,59 @@ header {
   .landingPage .landingBanner .centreText .paragraph {
     display: none;
   }
+  .landingPage .whoAreWe {
+    margin: 0px;
+    padding: 10px 0px 30px;
+  }
   .landingPage .whoAreWe h1, .landingPage .whoAreWe p {
     width: calc(100% - 40px);
+  }
+  .landingPage .corePillars {
+    width: calc(100% - 40px);
+  }
+  .landingPage .corePillars .content {
+    grid-template-columns: 1fr;
+  }
+  .landingPage .corePillars .content .left {
+    gap: 20px;
+  }
+  .landingPage .corePillars .content .left .pillar {
+    gap: 15px;
+  }
+  .landingPage .corePillars .content .left .pillar .highlightLine {
+    border-radius: 1px;
+    width: 2px;
+  }
+  .landingPage .corePillars .content .left .pillar .limitedText {
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    max-height: 6.2em;
+    line-height: normal;
+  }
+  .landingPage .corePillars .content .left .pillar p {
+    font-size: 1.1rem;
+  }
+  .landingPage .corePillars .content .right {
+    display: none;
   }
   .landingPage .innovationZone {
     width: calc(100% - 40px);
   }
   .landingPage .innovationZone .content {
     width: 100%;
+    gap: 15px;
     grid-template-areas: "topLeft" "topRight" "bottom";
   }
   .landingPage .innovationZone .content .zone {
-    padding: 10px;
+    padding: 25px 10px 10px;
     width: calc(100% - 20px);
     overflow: hidden;
+  }
+  .landingPage .innovationZone .content .zone .text {
+    gap: 0px;
+  }
+  .landingPage .innovationZone .content .zone .text p {
+    line-height: 1.5rem;
   }
   .landingPage .innovationZone .content .zone .image {
     width: 100%;
