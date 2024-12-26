@@ -110,7 +110,7 @@ input[type=submit i] {
   justify-content: space-between;
   width: calc(100% - 80px);
   padding: 0px 40px;
-  height: 80px;
+  height: 60px;
   background: transparent;
   backdrop-filter: blur(1px);
   z-index: 2;
@@ -137,10 +137,10 @@ input[type=submit i] {
   align-items: center;
   gap: 10px;
   position: absolute;
-  top: 25px;
+  top: 15px;
   right: 25px;
-  height: 30px;
-  width: 40px;
+  height: 25px;
+  width: 30px;
   justify-content: space-between;
   display: none;
 }
@@ -532,8 +532,8 @@ header {
     padding: 0px;
   }
   .navbar .left {
-    height: 80px;
-    min-height: 80px;
+    height: 60px;
+    min-height: 60px;
   }
   .navbar .left img {
     display: none;
@@ -674,7 +674,7 @@ header {
   }
   .aboutPage .content {
     width: calc(100dvw - 40px);
-    margin: 130px 0px 0px;
+    margin: 110px 0px 0px;
   }
   .aboutPage .content .title h1 {
     font-size: 2rem;

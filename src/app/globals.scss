@@ -144,7 +144,7 @@ input[type="submit" i]{
     width: calc(100% - 80px);
     padding: 0px 40px;
     // color: $white;
-    height: 80px;
+    height: 60px;
     background: transparent;
     backdrop-filter: blur(1px);
     z-index: 2;
@@ -171,10 +171,10 @@ input[type="submit" i]{
         @include fda;
         gap: 10px;
         position: absolute;
-        top: 25px;
+        top: 15px;
         right: 25px;
-        height: 30px;
-        width: 40px;
+        height: 25px;
+        width: 30px;
         justify-content: space-between;
         display: none;
         .lines{
@@ -537,8 +537,8 @@ header{
         width: 100dvw;
         padding: 0px;
         .left{
-            height: 80px;
-            min-height: 80px;
+            height: 60px;
+            min-height: 60px;
             img{
                 display: none;
             }
@@ -692,7 +692,7 @@ header{
         }
         .content{
             width: calc(100dvw - 40px);
-            margin: 130px 0px 0px;  
+            margin: 110px 0px 0px;  
             .title{
                 h1{
                     font-size: 2rem;
